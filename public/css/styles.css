@@ -1,0 +1,117 @@
+html,
+body {
+  height: 100%;
+  background-color: #000000;
+}
+
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.row {
+  margin-top: 60px;
+}
+
+.boxProgress {
+  display: none;
+}
+
+.cards {
+	float: left;
+	width: 48%;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid #ffffff;
+	margin-bottom: 5px;
+	text-align: center;
+	color: #ffffff;
+  border-radius: 10px;
+}
+.cards i {
+	font-size: 42px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.upload-btn, .btn:focus {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #f0b100;
+  transition: .5s;
+}
+
+.upload-btn:hover {
+  color: #000000;
+  background-color: #f0b100;
+  border: 1px solid #ffffff;
+}
+
+.glyphicon {
+  font-size: 3em;
+  color: #f0b100;
+  transition: .5s;
+}
+
+.upload-success {
+  color: green;
+}
+
+h2 {
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.panel {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
+
+#upload-input {
+  display: none;
+}
+
+.progress {
+  margin-top: 10px;
+  height: 5px;
+}
+
+.progress-bar {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff301d+0,fefb40+54,51f70f+100 */
+  background: #ff301d; /* Old browsers */
+  background: -moz-linear-gradient(left,  #ff301d 0%, #fefb40 54%, #51f70f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #ff301d 0%,#fefb40 54%,#51f70f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #ff301d 0%,#fefb40 54%,#51f70f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff301d', endColorstr='#51f70f',GradientType=1 ); /* IE6-9 */
+}
+
+.label {
+  font-size: 22px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+}
+
+/*ANIMATE*/
+.animation {
+-webkit-animation: cssAnimation 1s 20 linear;
+-moz-animation: cssAnimation 1s 20 linear;
+-o-animation: cssAnimation 1s 20 linear;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(0deg) scale(1) skew(1deg) translate(0px); }
+to { -webkit-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(0deg) scale(1) skew(1deg) translate(0px); }
+to { -moz-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(0deg) scale(1) skew(1deg) translate(0px); }
+to { -o-transform: rotate(360deg) scale(1) skew(1deg) translate(0px); }
+}
