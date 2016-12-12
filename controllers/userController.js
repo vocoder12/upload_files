@@ -13,7 +13,9 @@ exports.registerUser = (req,res) => {
 
     var user = new User();
     var form = new formidable.IncomingForm();
-
+    if( !fs.existsSync( avatarsPath)){
+        fs.mkdir( avatarsPath);
+    }
     form.keepExtensions = true;
     form.parse(req, function(err, fields, files) {       
         user.name = fields.name;

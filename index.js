@@ -1,4 +1,4 @@
-const mongodbRoute = 'mongodb://admin:admin@ds119768.mlab.com:19768/oscar-fileupload'
+const mongodbRoute = ''
 const port = 3001
 const mongoose =  require ('mongoose')
 const path = require('path')
