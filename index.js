@@ -1,4 +1,4 @@
-const mongodbRoute = ''
+const mongodbRoute = 'mongodb://admin:admin@ds119768.mlab.com:19768/oscar-fileupload'
 const port = 3001
 const mongoose =  require ('mongoose')
 const path = require('path')
@@ -15,8 +15,10 @@ app.use(function(req, res, next) {
 })
 
 app.use (router)
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/uploads')));
 app.set('view engine', 'hbs');
+
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
