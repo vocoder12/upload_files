@@ -15,8 +15,10 @@ app.use(function(req, res, next) {
 })
 
 app.use (router)
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/uploads')));
 app.set('view engine', 'hbs');
+
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
