@@ -3,7 +3,7 @@ Simple project Node, Express, Mongodb.
 
 http:// localhost:3001/register
 
-Create users, launch an AJAX request, save the avatar to a directory and enter the user into MongoDB.
+Create users, save the avatar into a directory and then, inserts the user into MongoDB´s collection.
 
 http://localhost:3001/users
 
